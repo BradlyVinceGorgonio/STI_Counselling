@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         System.out.println("Pangalawang beses");
         System.out.println("Check natin");
+        System.out.println("Check mo talaga to");
     }
     //fectch
     //vince
