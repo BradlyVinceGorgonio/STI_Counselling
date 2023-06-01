@@ -30,4 +30,6 @@ public class MainActivity extends AppCompatActivity {
     //dagdag
     //pampatulog
     //malakihatdogkpo
+    //last
+    //galarron
 }
