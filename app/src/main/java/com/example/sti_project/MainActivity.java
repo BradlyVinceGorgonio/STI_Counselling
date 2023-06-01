@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Tae mabaho");
         System.out.println("ASDASDASDASd");
         System.out.println("asdasd");
+        System.out.println("asd");
         //asdasdasdasda
         System.out.println("asd");
     }
