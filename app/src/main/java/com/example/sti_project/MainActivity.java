@@ -17,5 +17,8 @@ public class MainActivity extends AppCompatActivity {
         //asdasdasdasda
         //Sample last na
         System.out.println("asd");
+
+        System.out.println("Pangalawang beses");
+        System.out.println("Check natin");
     }
 }
