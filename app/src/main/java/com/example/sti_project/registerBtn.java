@@ -17,13 +17,13 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.FirebaseAuth;
 
-import org.checkerframework.checker.nullness.qual.NonNull;
 
-import javax.annotation.Nonnull;
+import org.checkerframework.checker.nullness.qual.NonNull;
 
 public class registerBtn extends AppCompatActivity
 {
     private FirebaseAuth mAuth;
+    private static final String TAG = "registerBtn";
 
     EditText name, email, pass, repass;
     Button registerBtn, alreadyBtn;
@@ -37,8 +37,8 @@ public class registerBtn extends AppCompatActivity
         mAuth = FirebaseAuth.getInstance();
 
         name = (EditText) findViewById(R.id.displayName);
-        email = (EditText) findViewById(R.id.emailAddress);
-        pass = (EditText) findViewById(R.id.password);
+        email = (EditText) findViewById(R.id.emailAddressReg);
+        pass = (EditText) findViewById(R.id.passwordReg);
         repass = (EditText) findViewById(R.id.rePassword);
         registerBtn = (Button) findViewById(R.id.registerBtn);
         alreadyBtn = (Button) findViewById(R.id.alreadyBtn);
@@ -51,8 +51,10 @@ public class registerBtn extends AppCompatActivity
                 String Sname = name.getText().toString();
                 String Srepass = repass.getText().toString();
 
+                System.out.println(Spass + " " + Semail + " " + Srepass);
                 if(Spass.equals(Srepass))
                 {
+
                     createAccount(Semail,Spass);
 
                 }
