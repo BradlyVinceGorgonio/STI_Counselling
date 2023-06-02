@@ -4,6 +4,7 @@ import static com.google.firebase.inappmessaging.internal.Logging.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -89,8 +90,10 @@ public class registerBtn extends AppCompatActivity
         // [END create_user_with_email]
     }
 
-    private void updateUI(FirebaseUser user) {
-    //Welcome user
+    private void updateUI(FirebaseUser user)
+    {
+        Intent intent = new Intent(registerBtn.this, LoginBtn.class);
+        startActivity(intent);
     }
     @Override
     public void onStart() {
