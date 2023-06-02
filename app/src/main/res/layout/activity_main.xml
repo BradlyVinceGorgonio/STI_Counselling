@@ -16,7 +16,7 @@
         android:backgroundTint="@color/white"
         android:text="Email:"
         android:textSize="20sp"
-        app:autoSizePresetSizes="30sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.195"

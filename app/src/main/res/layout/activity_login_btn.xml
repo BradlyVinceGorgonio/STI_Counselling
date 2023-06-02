@@ -4,36 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/StudentP"
+    android:background="@drawable/studentp"
     tools:context=".LoginBtn">
 
 
     <Button
         android:id="@+id/LogoutBtn"
-        android:layout_width="104dp"
-        android:layout_height="42dp"
+        android:layout_width="112dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="47dp"
         android:text="Log-out"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="36dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.567" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="111dp"
         android:text="Upcoming Schedule:"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="125dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintVertical_bias="0.026" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="78dp"
         android:layout_height="53dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="118dp"
         android:text="Individual Counseling"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="317dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.493" />
 
     <TextView
         android:id="@+id/textView3"
@@ -41,53 +62,89 @@
         android:layout_height="47dp"
         android:text="Couples Counseling"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="317dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoutBtn"
+        app:layout_constraintVertical_bias="0.562" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="78dp"
         android:layout_height="46dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="396dp"
         android:text="Group Counseling"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="410dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.991" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="81dp"
         android:layout_height="45dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="88dp"
         android:text="Family Counseling"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="411dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.137" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="98dp"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="6dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toStartOf="@+id/LogoutBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="150dp"
         android:layout_height="61dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="14dp"
         android:ems="10"
         android:inputType="text"
         android:text="Hi! Name"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="29dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/LogoutBtn"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="125dp"
         android:layout_height="54dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="134dp"
         android:text="Available Counselors"
         android:textAlignment="center"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="543dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
