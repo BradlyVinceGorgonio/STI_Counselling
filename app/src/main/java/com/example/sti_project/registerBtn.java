@@ -91,7 +91,7 @@ public class registerBtn extends AppCompatActivity
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             Toast.makeText(registerBtn.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-                            updateUI(null);
+
                         }
                     }
                 });

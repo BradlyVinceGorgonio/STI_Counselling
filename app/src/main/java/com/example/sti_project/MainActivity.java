@@ -42,8 +42,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                String Spass = emailLgn.getText().toString();
-                String Sname = passLgn.getText().toString();
+                String Semail = emailLgn.getText().toString();
+                String Spass = passLgn.getText().toString();
+                signIn(Semail, Spass);
             }
         });
 
@@ -75,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-                            updateUI(null);
+
                         }
                     }
                 });
