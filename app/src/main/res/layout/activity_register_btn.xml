@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ADD8E6"
     tools:context=".registerBtn">
 
 
@@ -18,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
+
     <EditText
         android:id="@+id/displayName"
         android:layout_width="287dp"
@@ -39,8 +41,8 @@
 
     <EditText
         android:id="@+id/emailAddressReg"
-        android:layout_width="268dp"
-        android:layout_height="65dp"
+        android:layout_width="287dp"
+        android:layout_height="72dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="26dp"
         android:layout_marginEnd="174dp"
@@ -58,8 +60,8 @@
 
     <EditText
         android:id="@+id/passwordReg"
-        android:layout_width="258dp"
-        android:layout_height="59dp"
+        android:layout_width="287dp"
+        android:layout_height="72dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="170dp"
@@ -77,8 +79,8 @@
 
     <EditText
         android:id="@+id/rePassword"
-        android:layout_width="270dp"
-        android:layout_height="56dp"
+        android:layout_width="287dp"
+        android:layout_height="72dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="174dp"
@@ -98,13 +100,13 @@
         android:id="@+id/registerBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="@color/black"
         android:text="REGISTER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        android:backgroundTint="@color/black"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rePassword"
         app:layout_constraintVertical_bias="0.165"></Button>
@@ -113,13 +115,13 @@
         android:id="@+id/alreadyBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="@color/black"
         android:text="Already have an Account?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        android:backgroundTint="@color/black"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerBtn"
         app:layout_constraintVertical_bias="0.165"></Button>
