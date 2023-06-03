@@ -65,6 +65,14 @@ public class registerBtn extends AppCompatActivity
             }
         });
 
+        alreadyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(registerBtn.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void createAccount(String email, String password) {
@@ -93,6 +101,7 @@ public class registerBtn extends AppCompatActivity
     private void updateUI(FirebaseUser user)
     {
         Intent intent = new Intent(registerBtn.this, LoginBtn.class);
+        //Add constructor to LoginBtn class to place infos
         startActivity(intent);
     }
     @Override
@@ -105,7 +114,10 @@ public class registerBtn extends AppCompatActivity
         }
     }
 
-    private void reload() {
+    private void reload()
+    {
+        Intent intent = new Intent(registerBtn.this, LoginBtn.class);
+        startActivity(intent);
     }
 
 }
